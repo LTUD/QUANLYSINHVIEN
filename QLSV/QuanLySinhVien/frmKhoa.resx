@@ -123,17 +123,11 @@
   <metadata name="TenKhoa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="MaKhoa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TenKhoa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnThoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA0xJREFUOE9Vk2toHFUcxSexFYkibb9IaVXwEStVEbGBpQRpGsGWWiOx1cQa0uoW
+        vQAADr0BR/uQrQAAA0xJREFUOE9Vk2toHFUcxSexFYkibb9IaVXwEStVEbGBpQRpGsGWWiOx1cQa0uoW
         jFaqmxpTHxRpjZq+xDbrxkY3tbYpFf2gCMZEJE0QP0ihBc1ms4/Z5+z7kX3N7uz8vDOi0rmcgXtnzvm/
         zpUQT1nXqBTyRAPzROUF4v4FEvIiitdF1PcPFHFmQnxPZCNolapBRSpoKqXfZ4meGCZ37CipU5+Qc4yQ
         Hxul4PyC/NdOChPnKXwzQem7b6n8+D2lqWn0aICiVkXKLCVJHnyH1PuHSH9whPTwh2SOHyP16UnkmcsE
@@ -153,7 +147,7 @@
   <data name="btnThem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAAndJREFUOE91U29IE3EYvt/dzc1td5vnKpdobk5xKhs6zQ+CEGFGH6L/X4oKgqJv
+        vQAADr0BR/uQrQAAAndJREFUOE91U29IE3EYvt/dzc1td5vnKpdobk5xKhs6zQ+CEGFGH6L/X4oKgqJv
         ClZQiWBEmSgJUUqQBFGaGRhpovmnjKgES1KQgqAgkECCIpjb7p5u7/JsMF94Dn7v+z7P/e553+OQIgRB
         QBw7jnLYfZoHx3GEVJGUZSYehwaK0Djuwr3vFgwsm9GzZMXNLzacealgf28WBAtL0jEErJyEqlsFeBGz
         4dkvEf3LIu4uWdD9TUL7JxmXFhw4P6egRu+xmmyGCAkIPIOnyYeJFY7IvT/S0bkgE67PS4TmD040zLhw

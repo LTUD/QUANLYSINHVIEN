@@ -40,5 +40,12 @@ namespace QuanLySinhVien
 
             txtMatKhau.UseSystemPasswordChar = true;
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Bạn có muốn quay lại trang chủ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+                this.Close();
+        }
     }
 }

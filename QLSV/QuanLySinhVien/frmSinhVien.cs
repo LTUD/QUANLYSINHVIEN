@@ -106,6 +106,13 @@ namespace QuanLySinhVien
             MessageBox.Show("Hãy chọn giới tính của bạn");
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Bạn có muốn quay lại trang chủ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+                this.Close();
+        }
+
         
     }
 }

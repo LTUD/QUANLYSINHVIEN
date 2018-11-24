@@ -107,7 +107,6 @@
             this.txtTenMon.TabIndex = 18;
             this.txtTenMon.TextChanged += new System.EventHandler(this.txtTenMon_TextChanged);
             this.txtTenMon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenMon_KeyPress);
-            //this.txtTenMon.Leave += new System.EventHandler(this.txtTenMon_Leave);
             // 
             // txtMaMon
             // 
@@ -200,6 +199,7 @@
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
@@ -273,6 +273,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(582, 504);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblMonHoc);

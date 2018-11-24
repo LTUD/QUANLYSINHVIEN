@@ -330,6 +330,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // grpSV
             // 
@@ -521,6 +522,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1077, 634);
+            this.ControlBox = false;
             this.Controls.Add(this.dgvSinhVien);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.grpSV);
