@@ -48,28 +48,22 @@ namespace QuanLySinhVien
         {
             Control ctr = (Control)sender;
             if (ctr.Text.Trim().Length == 0)
-                this.errorHoTenSV.SetError(txtHoTenSV, "Nhập trường tên sinh viên");
+                this.errorTenSV.SetError(txtTenSV, "Nhập trường tên sinh viên");
             else
-                this.errorHoTenSV.Clear();
-        }
-
-
-        private void txtNoiSinh_TextChanged(object sender, EventArgs e)
-        {
-
+                this.errorTenSV.Clear();
         }
         
 
-        private void txtHoTenSV_TextChanged(object sender, EventArgs e)
+        private void txtTenSV_TextChanged(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
             if (ctr.Text.Trim().Length == 0)
-                this.errorHoTenSV.SetError(txtHoTenSV, "Nhập trường Họ tên SV");
+                this.errorTenSV.SetError(txtTenSV, "Nhập trường tên SV");
             else
-                this.errorHoTenSV.Clear();
+                this.errorTenSV.Clear();
         }
 
-        private void txtHoTenSV_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtTenSV_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsLetter(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
@@ -78,11 +72,11 @@ namespace QuanLySinhVien
             }
         }
 
-        private void txtnois_TextChanged(object sender, EventArgs e)
+        private void txtNoiSinh_TextChanged(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
             if (ctr.Text.Trim().Length == 0)
-                this.errorNoiSinh.SetError(txtnois, "Nhập trường Nơi sinh");
+                this.errorNoiSinh.SetError(txtNoiSinh, "Nhập trường Nơi sinh");
             else
                 this.errorNoiSinh.Clear();
         }
@@ -106,13 +100,31 @@ namespace QuanLySinhVien
             MessageBox.Show("Hãy chọn giới tính của bạn");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void txtHoSV_TextChanged(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if (ctr.Text.Trim().Length == 0)
+                this.errorHoSV.SetError(txtTenSV, "Nhập trường Họ Sinh Viên");
+            else
+                this.errorHoSV.Clear();
+        }
+
+        private void txtHoSV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsLetter(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chi nhap ki tu");
+            }
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Bạn có muốn quay lại trang chủ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
                 this.Close();
-        }
-
-        
+        }  
     }
 }
