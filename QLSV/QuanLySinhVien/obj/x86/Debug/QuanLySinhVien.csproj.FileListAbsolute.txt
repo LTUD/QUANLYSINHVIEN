@@ -91,3 +91,16 @@ C:\Users\Administrator\Desktop\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\
 C:\Users\Administrator\Desktop\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmUser.resources
 C:\Users\Administrator\Desktop\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.Properties.Resources.resources
 C:\Users\Administrator\Desktop\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.exe
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.pdb
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmKetQua.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmKhoa.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmManHinhChinh.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmMonHoc.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmSinhVien.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmUser.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.csproj.GenerateResource.Cache

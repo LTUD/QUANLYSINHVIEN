@@ -39,10 +39,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtkh = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtHoTenSV = new System.Windows.Forms.TextBox();
+            this.txtTenSV = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtnois = new System.Windows.Forms.TextBox();
+            this.txtNoiSinh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -51,8 +51,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.grpSV = new System.Windows.Forms.GroupBox();
+            this.txtHoSV = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtMaSV = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -72,19 +74,21 @@
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.errorMaSV = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorHoTenSV = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorTenSV = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorNoiSinh = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorKhoaHoc = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorDiaChi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorHoSV = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.grpSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorMaSV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorHoTenSV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTenSV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNoiSinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorKhoaHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDiaChi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorHoSV)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -184,20 +188,18 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(113, 71);
+            this.label6.Location = new System.Drawing.Point(113, 111);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 17);
+            this.label6.Size = new System.Drawing.Size(60, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Họ Tên SV:";
+            this.label6.Text = "Tên SV:";
             // 
-            // txtHoTenSV
+            // txtTenSV
             // 
-            this.txtHoTenSV.Location = new System.Drawing.Point(223, 71);
-            this.txtHoTenSV.Name = "txtHoTenSV";
-            this.txtHoTenSV.Size = new System.Drawing.Size(176, 20);
-            this.txtHoTenSV.TabIndex = 3;
-            this.txtHoTenSV.TextChanged += new System.EventHandler(this.txtHoTenSV_TextChanged);
-            this.txtHoTenSV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTenSV_KeyPress);
+            this.txtTenSV.Location = new System.Drawing.Point(222, 108);
+            this.txtTenSV.Name = "txtTenSV";
+            this.txtTenSV.Size = new System.Drawing.Size(179, 20);
+            this.txtTenSV.TabIndex = 3;
             // 
             // openFileDialog1
             // 
@@ -208,26 +210,25 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(113, 147);
+            this.label5.Location = new System.Drawing.Point(113, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Nơi Sinh:";
             // 
-            // txtnois
+            // txtNoiSinh
             // 
-            this.txtnois.Location = new System.Drawing.Point(223, 147);
-            this.txtnois.Name = "txtnois";
-            this.txtnois.Size = new System.Drawing.Size(176, 20);
-            this.txtnois.TabIndex = 2;
-            this.txtnois.TextChanged += new System.EventHandler(this.txtnois_TextChanged);
+            this.txtNoiSinh.Location = new System.Drawing.Point(223, 187);
+            this.txtNoiSinh.Name = "txtNoiSinh";
+            this.txtNoiSinh.Size = new System.Drawing.Size(179, 20);
+            this.txtNoiSinh.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(113, 112);
+            this.label4.Location = new System.Drawing.Point(113, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 3;
@@ -252,7 +253,7 @@
             this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.btnThoat);
             this.groupBox4.Location = new System.Drawing.Point(42, 547);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1004, 60);
@@ -318,23 +319,25 @@
             this.button1.Text = "Sửa";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnThoat
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(795, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.Red;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(795, 17);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 35);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // grpSV
             // 
             this.grpSV.BackColor = System.Drawing.Color.Transparent;
+            this.grpSV.Controls.Add(this.txtHoSV);
+            this.grpSV.Controls.Add(this.label3);
             this.grpSV.Controls.Add(this.txtMaSV);
             this.grpSV.Controls.Add(this.txtDiaChi);
             this.grpSV.Controls.Add(this.label11);
@@ -349,8 +352,8 @@
             this.grpSV.Controls.Add(this.txtkh);
             this.grpSV.Controls.Add(this.label6);
             this.grpSV.Controls.Add(this.label5);
-            this.grpSV.Controls.Add(this.txtHoTenSV);
-            this.grpSV.Controls.Add(this.txtnois);
+            this.grpSV.Controls.Add(this.txtTenSV);
+            this.grpSV.Controls.Add(this.txtNoiSinh);
             this.grpSV.Controls.Add(this.label4);
             this.grpSV.Controls.Add(this.label2);
             this.grpSV.Location = new System.Drawing.Point(40, 50);
@@ -358,6 +361,25 @@
             this.grpSV.Size = new System.Drawing.Size(996, 265);
             this.grpSV.TabIndex = 9;
             this.grpSV.TabStop = false;
+            // 
+            // txtHoSV
+            // 
+            this.txtHoSV.Location = new System.Drawing.Point(223, 69);
+            this.txtHoSV.Name = "txtHoSV";
+            this.txtHoSV.Size = new System.Drawing.Size(178, 20);
+            this.txtHoSV.TabIndex = 19;
+            this.txtHoSV.TextChanged += new System.EventHandler(this.txtHoSV_TextChanged);
+            this.txtHoSV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoSV_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(113, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 17);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Họ SV:";
             // 
             // txtMaSV
             // 
@@ -408,9 +430,9 @@
             // dateNgaySinh
             // 
             this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgaySinh.Location = new System.Drawing.Point(223, 105);
+            this.dateNgaySinh.Location = new System.Drawing.Point(223, 144);
             this.dateNgaySinh.Name = "dateNgaySinh";
-            this.dateNgaySinh.Size = new System.Drawing.Size(173, 20);
+            this.dateNgaySinh.Size = new System.Drawing.Size(179, 20);
             this.dateNgaySinh.TabIndex = 12;
             this.dateNgaySinh.ValueChanged += new System.EventHandler(this.dateNgaySinh_ValueChanged);
             // 
@@ -499,9 +521,9 @@
             // 
             this.errorMaSV.ContainerControl = this;
             // 
-            // errorHoTenSV
+            // errorTenSV
             // 
-            this.errorHoTenSV.ContainerControl = this;
+            this.errorTenSV.ContainerControl = this;
             // 
             // errorNoiSinh
             // 
@@ -514,6 +536,10 @@
             // errorDiaChi
             // 
             this.errorDiaChi.ContainerControl = this;
+            // 
+            // errorHoSV
+            // 
+            this.errorHoSV.ContainerControl = this;
             // 
             // frmSinhVien
             // 
@@ -536,10 +562,11 @@
             this.grpSV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorMaSV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorHoTenSV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTenSV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNoiSinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorKhoaHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDiaChi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorHoSV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,13 +583,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtkh;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtHoTenSV;
+        private System.Windows.Forms.TextBox txtTenSV;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtnois;
+        private System.Windows.Forms.TextBox txtNoiSinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox grpSV;
@@ -588,10 +615,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Khoa;
         private System.Windows.Forms.ErrorProvider errorMaSV;
-        private System.Windows.Forms.ErrorProvider errorHoTenSV;
+        private System.Windows.Forms.ErrorProvider errorTenSV;
         private System.Windows.Forms.ErrorProvider errorNoiSinh;
         private System.Windows.Forms.ErrorProvider errorKhoaHoc;
         private System.Windows.Forms.ErrorProvider errorDiaChi;
         private System.Windows.Forms.TextBox txtMaSV;
+        private System.Windows.Forms.TextBox txtHoSV;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ErrorProvider errorHoSV;
     }
 }
