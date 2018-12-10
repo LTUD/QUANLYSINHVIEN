@@ -25,10 +25,7 @@ namespace QuanLySinhVien
                 this.errorTenDN.Clear();
         }
 
-        private void rbAdmin_CheckedChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hãy lựa chọn đúng người dùng");
-        }
+       
 
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
@@ -47,5 +44,46 @@ namespace QuanLySinhVien
             if (d == DialogResult.Yes)
                 this.Close();
         }
+
+        int dem;
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            
+            if (txtTenDangNhap.Text == "admin" && txtMatKhau.Text == "123456")
+            {
+                frmDangNhapTC manhinh = new frmDangNhapTC();
+                manhinh.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                dem++;
+                MessageBox.Show("Bạn đã đăng nhập thất bại");
+                this.txtTenDangNhap.Focus();
+
+                if (dem == 3)
+                {
+                    MessageBox.Show("Tài khoản của bạn bị khóa");
+                    btnDangNhap.Enabled = false;
+                    frmDangNhapTB user = new frmDangNhapTB();
+                    user.Show();
+                    this.Hide();
+                }
+            }
+        }
+
+        private void chkHienThiPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHienThiPass.Checked == true)
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+
+            }
+            else
+            {
+                txtMatKhau.UseSystemPasswordChar = true;
+            }
+        }  
     }
 }

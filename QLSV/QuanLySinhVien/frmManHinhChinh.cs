@@ -19,6 +19,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace QuanLySinhVien
 {
@@ -62,10 +64,7 @@ namespace QuanLySinhVien
             f.Show();//hiển thị màn form Kết quả
         }
 
-        private void toolsmiQuanTri_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void toolsmiKhoa_Click(object sender, EventArgs e)
         {
@@ -91,6 +90,28 @@ namespace QuanLySinhVien
             user.Show();
         }
 
-        
+        public void EnableMenu()
+        {
+            toolsmiSinhVien.Enabled = true;
+            toolsmiKhoa.Enabled = true;
+            toolsmiMonHoc.Enabled = true;
+            toolsmiKetQua.Enabled = true;
+            TimKiemToolStripMenuItem.Enabled = true;
+            
+        }
+        public void DisableMenu()
+        {
+            toolsmiSinhVien.Enabled = false;
+            toolsmiKhoa.Enabled = false;
+            toolsmiMonHoc.Enabled = false;
+            toolsmiKetQua.Enabled = false;
+            TimKiemToolStripMenuItem.Enabled = false;
+        }
+
+        private void TimKiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiem search = new frmTimKiem();
+            search.Show();
+        }  
     }
 }

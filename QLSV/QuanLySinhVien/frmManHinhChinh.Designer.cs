@@ -37,10 +37,11 @@
             this.toolsmiDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsmiSinhVien = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsmiKhoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.lớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsmiMonHoc = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsmiKetQua = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsmiThoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.tìmKiếmSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TimKiemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.msQuanLySinhVien.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             this.msQuanLySinhVien.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsmiQuanTri,
             this.toolsmiDanhMuc,
+            this.tìmKiếmSinhViênToolStripMenuItem,
             this.toolsmiThoat});
             this.msQuanLySinhVien.Location = new System.Drawing.Point(0, 0);
             this.msQuanLySinhVien.Name = "msQuanLySinhVien";
@@ -69,7 +71,6 @@
             this.toolsmiQuanTri.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
             this.toolsmiQuanTri.Size = new System.Drawing.Size(78, 21);
             this.toolsmiQuanTri.Text = "&Quản Trị";
-            this.toolsmiQuanTri.Click += new System.EventHandler(this.toolsmiQuanTri_Click);
             // 
             // toolmsiDangNhap
             // 
@@ -103,7 +104,6 @@
             this.toolsmiDanhMuc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsmiSinhVien,
             this.toolsmiKhoa,
-            this.lớpToolStripMenuItem,
             this.toolsmiMonHoc,
             this.toolsmiKetQua});
             this.toolsmiDanhMuc.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,7 +113,7 @@
             // 
             // toolsmiSinhVien
             // 
-            this.toolsmiSinhVien.Image = ((System.Drawing.Image)(resources.GetObject("toolsmiSinhVien.Image")));
+            this.toolsmiSinhVien.Enabled = false;
             this.toolsmiSinhVien.Name = "toolsmiSinhVien";
             this.toolsmiSinhVien.Size = new System.Drawing.Size(138, 22);
             this.toolsmiSinhVien.Text = "Sinh Viên";
@@ -121,19 +121,15 @@
             // 
             // toolsmiKhoa
             // 
+            this.toolsmiKhoa.Enabled = false;
             this.toolsmiKhoa.Name = "toolsmiKhoa";
             this.toolsmiKhoa.Size = new System.Drawing.Size(138, 22);
             this.toolsmiKhoa.Text = "Khoa";
             this.toolsmiKhoa.Click += new System.EventHandler(this.toolsmiKhoa_Click);
             // 
-            // lớpToolStripMenuItem
-            // 
-            this.lớpToolStripMenuItem.Name = "lớpToolStripMenuItem";
-            this.lớpToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.lớpToolStripMenuItem.Text = "Lớp";
-            // 
             // toolsmiMonHoc
             // 
+            this.toolsmiMonHoc.Enabled = false;
             this.toolsmiMonHoc.Name = "toolsmiMonHoc";
             this.toolsmiMonHoc.Size = new System.Drawing.Size(138, 22);
             this.toolsmiMonHoc.Text = "Môn Học";
@@ -141,6 +137,7 @@
             // 
             // toolsmiKetQua
             // 
+            this.toolsmiKetQua.Enabled = false;
             this.toolsmiKetQua.Name = "toolsmiKetQua";
             this.toolsmiKetQua.Size = new System.Drawing.Size(138, 22);
             this.toolsmiKetQua.Text = "Kết Quả";
@@ -154,13 +151,32 @@
             this.toolsmiThoat.Text = "&Thoát";
             this.toolsmiThoat.Click += new System.EventHandler(this.toolsmiThoat_Click);
             // 
+            // tìmKiếmSinhViênToolStripMenuItem
+            // 
+            this.tìmKiếmSinhViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TimKiemToolStripMenuItem});
+            this.tìmKiếmSinhViênToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tìmKiếmSinhViênToolStripMenuItem.Name = "tìmKiếmSinhViênToolStripMenuItem";
+            this.tìmKiếmSinhViênToolStripMenuItem.Size = new System.Drawing.Size(151, 21);
+            this.tìmKiếmSinhViênToolStripMenuItem.Text = "Tìm Kiếm Sinh Viên";
+            // 
+            // TimKiemToolStripMenuItem
+            // 
+            this.TimKiemToolStripMenuItem.Enabled = false;
+            this.TimKiemToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKiemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiemToolStripMenuItem.Image")));
+            this.TimKiemToolStripMenuItem.Name = "TimKiemToolStripMenuItem";
+            this.TimKiemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.TimKiemToolStripMenuItem.Text = "Tìm Kiếm";
+            this.TimKiemToolStripMenuItem.Click += new System.EventHandler(this.TimKiemToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(362, 37);
+            this.label1.Location = new System.Drawing.Point(346, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(696, 42);
             this.label1.TabIndex = 1;
@@ -181,8 +197,7 @@
             this.MainMenuStrip = this.msQuanLySinhVien;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmManHinhChinh";
-            this.Text = "                                                                                Q" +
-                "UẢN LÝ SINH VIÊN";
+            this.Text = "QUẢN LÝ SINH VIÊN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmManHinhChinh_FormClosing);
             this.msQuanLySinhVien.ResumeLayout(false);
@@ -205,8 +220,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolsmiKetQua;
         private System.Windows.Forms.ToolStripMenuItem toolsmiThoat;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lớpToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem tìmKiếmSinhViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TimKiemToolStripMenuItem;
     }
 }
 

@@ -31,18 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
-            this.cbGhiNho = new System.Windows.Forms.CheckBox();
             this.lblMatKhau = new System.Windows.Forms.Label();
             this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.rbUser = new System.Windows.Forms.RadioButton();
-            this.rbAdmin = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.errorTenDN = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorMatKhau = new System.Windows.Forms.ErrorProvider(this.components);
+            this.chkHienThiPass = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorTenDN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorMatKhau)).BeginInit();
@@ -60,18 +58,19 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             // 
-            // button1
+            // btnDangNhap
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(78, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 31);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Đăng Nhập";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.Blue;
+            this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
+            this.btnDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangNhap.Location = new System.Drawing.Point(65, 226);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(100, 31);
+            this.btnDangNhap.TabIndex = 19;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnThoat
             // 
@@ -79,7 +78,7 @@
             this.btnThoat.ForeColor = System.Drawing.Color.Red;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(204, 205);
+            this.btnThoat.Location = new System.Drawing.Point(199, 226);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(100, 31);
             this.btnThoat.TabIndex = 18;
@@ -103,17 +102,6 @@
             this.txtTenDangNhap.TabIndex = 14;
             this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);
             // 
-            // cbGhiNho
-            // 
-            this.cbGhiNho.AutoSize = true;
-            this.cbGhiNho.BackColor = System.Drawing.Color.Transparent;
-            this.cbGhiNho.Location = new System.Drawing.Point(28, 170);
-            this.cbGhiNho.Name = "cbGhiNho";
-            this.cbGhiNho.Size = new System.Drawing.Size(224, 18);
-            this.cbGhiNho.TabIndex = 17;
-            this.cbGhiNho.Text = "Ghi nhớ lần đăng nhập ở lần sau";
-            this.cbGhiNho.UseVisualStyleBackColor = false;
-            // 
             // lblMatKhau
             // 
             this.lblMatKhau.AutoSize = true;
@@ -134,32 +122,6 @@
             this.lblTenDangNhap.TabIndex = 13;
             this.lblTenDangNhap.Text = "Tên đăng nhập:";
             // 
-            // rbUser
-            // 
-            this.rbUser.AutoSize = true;
-            this.rbUser.BackColor = System.Drawing.Color.Transparent;
-            this.rbUser.Location = new System.Drawing.Point(197, 16);
-            this.rbUser.Name = "rbUser";
-            this.rbUser.Size = new System.Drawing.Size(51, 18);
-            this.rbUser.TabIndex = 12;
-            this.rbUser.TabStop = true;
-            this.rbUser.Text = "User";
-            this.rbUser.UseVisualStyleBackColor = false;
-            // 
-            // rbAdmin
-            // 
-            this.rbAdmin.AutoSize = true;
-            this.rbAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.rbAdmin.Checked = true;
-            this.rbAdmin.Location = new System.Drawing.Point(113, 16);
-            this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(64, 18);
-            this.rbAdmin.TabIndex = 11;
-            this.rbAdmin.TabStop = true;
-            this.rbAdmin.Text = "Admin";
-            this.rbAdmin.UseVisualStyleBackColor = false;
-            this.rbAdmin.CheckedChanged += new System.EventHandler(this.rbAdmin_CheckedChanged);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -167,8 +129,6 @@
             this.groupBox1.Controls.Add(this.txtTenDangNhap);
             this.groupBox1.Controls.Add(this.lblMatKhau);
             this.groupBox1.Controls.Add(this.lblTenDangNhap);
-            this.groupBox1.Controls.Add(this.rbUser);
-            this.groupBox1.Controls.Add(this.rbAdmin);
             this.groupBox1.Location = new System.Drawing.Point(22, 42);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(342, 122);
@@ -183,18 +143,31 @@
             // 
             this.errorMatKhau.ContainerControl = this;
             // 
+            // chkHienThiPass
+            // 
+            this.chkHienThiPass.AutoSize = true;
+            this.chkHienThiPass.BackColor = System.Drawing.Color.Transparent;
+            this.chkHienThiPass.Location = new System.Drawing.Point(28, 185);
+            this.chkHienThiPass.Name = "chkHienThiPass";
+            this.chkHienThiPass.Size = new System.Drawing.Size(137, 18);
+            this.chkHienThiPass.TabIndex = 22;
+            this.chkHienThiPass.Text = "Hiển thị Mật Khẩu";
+            this.chkHienThiPass.UseVisualStyleBackColor = false;
+            this.chkHienThiPass.CheckedChanged += new System.EventHandler(this.chkHienThiPass_CheckedChanged);
+            // 
             // frmUser
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(381, 254);
+            this.ClientSize = new System.Drawing.Size(381, 274);
             this.ControlBox = false;
+            this.Controls.Add(this.chkHienThiPass);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.cbGhiNho);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -212,18 +185,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.TextBox txtTenDangNhap;
-        private System.Windows.Forms.CheckBox cbGhiNho;
         private System.Windows.Forms.Label lblMatKhau;
         private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.RadioButton rbUser;
-        private System.Windows.Forms.RadioButton rbAdmin;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ErrorProvider errorTenDN;
         private System.Windows.Forms.ErrorProvider errorMatKhau;
+        private System.Windows.Forms.CheckBox chkHienThiPass;
 
     }
 }
