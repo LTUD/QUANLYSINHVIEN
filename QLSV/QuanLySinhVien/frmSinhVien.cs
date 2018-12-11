@@ -22,7 +22,7 @@ namespace QuanLySinhVien
         public SqlConnection getConnect()
         {
             return new SqlConnection
-            ("Data Source=.;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+            ("Data Source=.;Initial Catalog=QLSV;Integrated Security=True");
         }
         
         //Bắt lỗi trường Khóa Học

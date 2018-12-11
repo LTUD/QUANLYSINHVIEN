@@ -136,3 +136,4 @@ C:\Users\Administrator\Downloads\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVie
 C:\Users\Administrator\Downloads\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmUser.resources
 C:\Users\Administrator\Downloads\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.Properties.Resources.resources
 C:\Users\Administrator\Downloads\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\QUANLYSINHVIEN\QLSV\QuanLySinhVien\obj\x86\Debug\QuanLySinhVien.frmTimKiem.resources

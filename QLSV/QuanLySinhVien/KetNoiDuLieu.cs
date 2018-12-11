@@ -11,7 +11,7 @@ namespace QuanLySinhVien
     {
         //Khởi tạo kết nối tới cơ sở dữ liệu
         public SqlConnection cnn = new SqlConnection
-        ("Data Source=.;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+        ("Data Source=.;Initial Catalog=QLSV;Integrated Security=True");
 
         public void myconnect()
         {

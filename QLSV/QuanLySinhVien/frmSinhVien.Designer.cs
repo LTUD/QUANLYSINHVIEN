@@ -564,7 +564,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmSinhVien";
             this.Text = "Sinh Viên";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorMaSV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTenSV)).EndInit();

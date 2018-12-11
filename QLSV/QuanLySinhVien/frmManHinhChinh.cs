@@ -89,7 +89,9 @@ namespace QuanLySinhVien
             frmUser user = new frmUser();
             user.Show();
         }
-
+        /// <summary>
+        /// Hiện các trường trên thanh menu
+        /// </summary>
         public void EnableMenu()
         {
             toolsmiSinhVien.Enabled = true;
@@ -99,6 +101,9 @@ namespace QuanLySinhVien
             TimKiemToolStripMenuItem.Enabled = true;
             
         }
+        /// <summary>
+        /// ẩn các trường trên thanh menu
+        /// </summary>
         public void DisableMenu()
         {
             toolsmiSinhVien.Enabled = false;
@@ -107,7 +112,11 @@ namespace QuanLySinhVien
             toolsmiKetQua.Enabled = false;
             TimKiemToolStripMenuItem.Enabled = false;
         }
-
+        /// <summary>
+        /// Xử lý form tìm kiếm khi người dùng nhấp vào tìm kiếm 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TimKiemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTimKiem search = new frmTimKiem();

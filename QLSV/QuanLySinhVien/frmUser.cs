@@ -16,6 +16,11 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Xử lý trường tên đăng nhập
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
@@ -26,7 +31,11 @@ namespace QuanLySinhVien
         }
 
        
-
+        /// <summary>
+        /// Xử lý trường nhập mật khẩu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
@@ -38,13 +47,20 @@ namespace QuanLySinhVien
             txtMatKhau.UseSystemPasswordChar = true;
         }
 
+        /// <summary>
+        /// Xử lý button thoát
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Bạn có muốn quay lại trang chủ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
                 this.Close();
         }
-
+        /// <summary>
+        /// Xử lý button đăng nhập
+        /// </summary>
         int dem;
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -72,7 +88,11 @@ namespace QuanLySinhVien
                 }
             }
         }
-
+        /// <summary>
+        /// Hiển thị mật khẩu dưới dạng Text
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void chkHienThiPass_CheckedChanged(object sender, EventArgs e)
         {
             if (chkHienThiPass.Checked == true)
